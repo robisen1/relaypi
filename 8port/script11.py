@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import RPi.GPIO as GPIO
 import time
 
@@ -38,11 +37,13 @@ try:
     pinList.reverse()
 
 # End program cleanly with keyboard
+
+    GPIO.cleanup()
+    print ("Good bye!")
+  
+  
 except KeyboardInterrupt:
   print ("  Quit")
 
   # Reset GPIO settings
   GPIO.cleanup()
-
-# find more information on this script at
-# http://youtu.be/oaf_zQcrg7g

@@ -7,7 +7,7 @@ GPIO.setmode(GPIO.BCM)
 # init list with pin numbers
 
 #pinList = [2, 3, 4, 17, 27, 22, 10, 9]
-pinList = [18,23,24,12,16]
+pinList = [23, 24]
 
 # loop through pins and set mode and state to 'low'
 
@@ -17,8 +17,8 @@ for i in pinList:
 
 # time to sleep between operations in the main loop
 
-SleepTimeS = 0.05
-SleepTimeL = 0.1
+SleepTimeS = 1
+SleepTimeL = 1
 
 # main loop
 
@@ -37,7 +37,7 @@ try:
 
 # End program cleanly with keyboard
 except KeyboardInterrupt:
-  print ("  Quit")
+  print ("Quit")
 
   # Reset GPIO settings
   GPIO.cleanup()

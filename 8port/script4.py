@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BCM)
 
 # init list with pin numbers
 
-pinList = [18,23,24,12,16]
+pinList = [18,23]
 
 # pinList = [2, 3, 4, 17, 27, 22, 10, 9]
 
